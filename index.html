@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Sign-up-form</title>
+</head>
+<body>
+<div class="container">
+    <div class="hero-part">
+        <h1>Jelly</h1>
+        
+    </div>
+    <div class = "form-part">
+        <div class="form-header">
+
+            <p class="header-txt"><span class="header-red">This is not a real service!</span> You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up <span class="header-txt italic">now</span> to get started.</p>
+            <p class="header-txt">Let's do this!</p>
+
+        </div>
+        <form method="post" action="">
+                <div class="col-one">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="first-name" placeholder="Nikhil" required autocomplete="off">
+                    <label for="ph-num">Phone number</label>
+                    <input id="ph-num" name="phone-number" placeholder="7962011209" required autocomplete="off">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="password" placeholder="********" required autocomplete="off">
+                </div>
+                <div class="col-two">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" placeholder="Raj" required autocomplete="off">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="N@raj.com"required autocomplete="off" >
+                    <label for="confpass">Confirm Password</label>
+                    <input type="password" id="confpass" placeholder="********" required autocomplete="off">
+                    <p class="input-error">Password doesn't match.</p>
+                </div>
+                <div class="button-box">
+                    <p class="error-info-btn">Turn all fields green and then press the button below.</p>
+                    <button type="submit" disabled>Create account</button>
+                    <p class="body-txt">Already have an account? <a href="#" target="blank">Log In</a></p>
+                </div>
+            </form>
+            
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
